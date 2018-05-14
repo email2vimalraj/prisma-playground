@@ -13,4 +13,5 @@ type Configuration {
   id: ID! @unique
   environment: String!
   version: String!
+  execution: Execution!
 }
