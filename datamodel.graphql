@@ -1,0 +1,16 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Execution {
+  id: ID! @unique
+  name: String! @unique
+  configuration: Configuration! @unique
+}
+
+type Configuration {
+  id: ID! @unique
+  environment: String!
+  version: String!
+}
